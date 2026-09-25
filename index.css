@@ -1,0 +1,60 @@
+:root {
+  --ink: #1b2430;
+  --paper: #f7f5f0;
+  --indigo: #2e3a59;
+  --indigo-2: #3e4e73;
+  --gold: #c08a2e;
+  --slate: #5b6472;
+  --line: #d9d4c6;
+  --err: #a3402d;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Inter', system-ui, sans-serif;
+}
+h1, h2, h3 { font-family: 'Source Serif 4', Georgia, serif; margin: 0; }
+.app-shell { min-height: 100vh; }
+.app-header {
+  display: flex; align-items: center; gap: 10px;
+  padding: 20px 28px; border-bottom: 1px solid var(--line);
+}
+.app-header .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--gold); }
+.app-main { max-width: 640px; margin: 0 auto; padding: 32px 20px; }
+.panel {
+  background: #fff; border: 1px solid var(--line); border-radius: 4px; padding: 26px;
+}
+.section-sub { color: var(--slate); font-size: .9rem; margin: 6px 0 20px; }
+.question { border: none; padding: 0; margin-bottom: 16px; }
+.question legend { font-weight: 600; margin-bottom: 8px; }
+.question label { display: flex; gap: 8px; font-size: .9rem; margin-bottom: 6px; }
+.primary-btn {
+  background: var(--indigo); color: #fff; border: none; border-radius: 3px;
+  padding: 11px 20px; font-weight: 600; cursor: pointer;
+}
+.primary-btn:hover { background: var(--indigo-2); }
+.primary-btn:disabled { opacity: .6; cursor: not-allowed; }
+.form-msg { color: var(--err); font-size: .85rem; }
+.progress-track { width: 100%; height: 10px; background: var(--line); border-radius: 6px; overflow: hidden; }
+.progress-fill { height: 100%; background: var(--gold); transition: width .4s ease; }
+.progress-label { font-size: .82rem; color: var(--slate); margin: 6px 0 20px; }
+.node-list { display: flex; flex-direction: column; gap: 10px; }
+.path-node {
+  display: flex; gap: 12px; align-items: center; text-decoration: none; color: var(--ink);
+  border: 1px solid var(--line); border-radius: 4px; padding: 12px 14px;
+}
+.path-node:hover { border-color: var(--indigo-2); }
+.path-node.is-complete { background: #FBF6EA; border-color: var(--gold); }
+.path-node-status {
+  width: 28px; height: 28px; border-radius: 50%; background: var(--paper);
+  display: flex; align-items: center; justify-content: center; font-weight: 700; flex: none;
+}
+.path-node p { margin: 2px 0 0; color: var(--slate); font-size: .82rem; }
+.back-link { color: var(--slate); font-size: .85rem; text-decoration: none; display: inline-block; margin-bottom: 14px; }
+.resource-stub {
+  background: var(--paper); border: 1px dashed var(--line); border-radius: 4px;
+  padding: 14px; margin: 16px 0;
+}
+.simulate-toggle { display: flex; align-items: center; gap: 8px; font-size: .9rem; }
