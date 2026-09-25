@@ -1,0 +1,37 @@
+{
+  "subject": "Mathematics",
+  "grade": "8",
+  "board": "CBSE",
+  "learning_objectives": [
+    {
+      "lo_id": "LO-8M-01",
+      "chapter": "Rational Numbers",
+      "title": "Identify and represent rational numbers on a number line",
+      "prerequisites": []
+    },
+    {
+      "lo_id": "LO-8M-02",
+      "chapter": "Linear Equations",
+      "title": "Solve linear equations with variables on both sides",
+      "prerequisites": ["LO-8M-01"]
+    },
+    {
+      "lo_id": "LO-8M-03",
+      "chapter": "Linear Equations",
+      "title": "Apply linear equations to word problems",
+      "prerequisites": ["LO-8M-02"]
+    },
+    {
+      "lo_id": "LO-8M-04",
+      "chapter": "Quadrilaterals",
+      "title": "Classify quadrilaterals by properties of sides and angles",
+      "prerequisites": []
+    },
+    {
+      "lo_id": "LO-8M-05",
+      "chapter": "Data Handling",
+      "title": "Construct and interpret bar graphs and histograms",
+      "prerequisites": []
+    }
+  ]
+}
